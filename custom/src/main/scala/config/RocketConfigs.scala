@@ -43,8 +43,8 @@ class WithCustomBootROM extends Config((site, here, up) => {
 })
 
 class BaseRocketConfig extends Config(
-  new WithCustomMemPort(x"5000_0000", x"1000_0000") ++
-  new WithCustomMMIOPort(x"e000_0000", x"2000_0000") ++
+  new WithCustomMemPort(x"8000_0000", x"1000_0000") ++
+  new WithCustomMMIOPort(x"6000_0000", x"2000_0000") ++
   new WithCustomSlavePort ++
   new WithCustomBootROM ++
   new WithTimebase(BigInt(1000000)) ++ // 1 MHz
